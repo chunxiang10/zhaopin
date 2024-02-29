@@ -1,4 +1,6 @@
 <nav class="navigation">
+
+
 	{{ if not .IsHome }}
 		<a href="{{ "/" | relURL }}"> <span class="arrow">←</span>{{ with .Site.Params.home }}{{ . }}{{ else }}{{ i18n "home" }}{{ end }}</a>
 	{{ end }}
@@ -13,4 +15,9 @@
 	{{ if .Site.Params.enableRSS }}
 	  <a class="button" href="{{ .Site.RSSLink }}">{{ with .Site.Params.subscribe }}{{ . }}{{ else }}{{ i18n "subscribe" }}{{ end }}</a>
 	{{ end }}
+	<!--<form action="/search" method="GET" >
+		<input type="search" name="q" id="search-query" placeholder="搜索....">
+		<button type="submit">搜索</button>
+	</form>
+	-->
 </nav>
