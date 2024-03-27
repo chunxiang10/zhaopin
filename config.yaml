@@ -33,7 +33,6 @@ markup:
 outputs:
   home:
     - HTML
-    - RSS
     - JSON
 
 # Social links in footer, support github,twitter,stackoverflow,facebook
